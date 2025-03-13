@@ -12,10 +12,6 @@ body {
     /* overflow: hidden; */
 }
 
-nav {
-    padding: 24px 0px;
-}
-
 p {
     font-size: 16px;
 }
@@ -24,7 +20,13 @@ h5 {
     font-size: 24px;
 }
 
+.navbar-native {
+    padding: 24px 0px;
+}
+
 .main-header {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 70dvh;
     background-image: url('images/header-background.png');
@@ -35,14 +37,104 @@ h5 {
 
 .native-row {
     width: 100%;
-    padding: 24px 0px;
     display: flex;
     align-items: center;
 }
 
+.native-row .text-content {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: 24px;
+}
+
+.main-header .native-row .button-row {
+    background: rgba(255, 255, 255, 1);
+    padding: 20px;
+    gap: 16px;
+    display: flex;
+    width: max-content;
+}
+
+.main-header .native-row h2 {
+    margin: 0px;
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.8px;
+    vertical-align: middle;
+}
+
+.main-header .button-row button {
+    padding: 12px 36px;
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 12px;
+}
+
+.main-header .request-demo {
+    border: none;
+    color: #fff;
+    background: rgba(38, 93, 245, 1);
+}
+
+.main-header .watch-video {
+    color: rgba(38, 93, 245, 1);
+    background: #fff;
+    border: 1px solid rgba(38, 93, 245, 1)
+}
+
 .clients-carousel {
+    margin: 48px 0px;
+    position: relative;
     display: flex;
     flex-direction: row;
+}
+
+.carousel-title {
+    width: max-content;
+}
+
+.carousel-title p {
+    margin: 0px;
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 10%;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgba(0, 177, 38, 1);
+}
+
+.carousel-title h3 {
+    font-family: Manrope;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+}
+
+.carousel-title h3 span {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+}
+
+.carousel-slider {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .product-features .wrapper {
