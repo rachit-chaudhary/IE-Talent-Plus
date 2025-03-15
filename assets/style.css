@@ -296,13 +296,175 @@ h5 {
     vertical-align: middle;
 }
 
+.tab-switch {
+    margin: 24px 0px 0px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #265DF5
+}
+
+.tab-switch .toggle-container {
+    display: flex;
+    gap: 0px;
+}
+
+.tab-switch .toggle-btn {
+    margin: 0px;
+    width: 260px;
+    height: 52px;
+    border: 2px solid #A6BDFF;
+    border-bottom: none;
+    background: #D9E3FF66;
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(0,0,0,.7);
+}
+
+.tab-switch .active {
+    color: #fff;
+    font-family: Manrope;
+    font-weight: 800;
+    border: none;
+    background: #265DF5;
+}
+
+.tv-btn {
+    border-top-left-radius: 12px;
+}
+
+.cv-btn {
+    border-top-right-radius: 12px;
+}
+
+.tab-content {
+    display: flex;
+    gap: 16px;
+    margin: 24px 0px;
+}
+
+.tab-content h4 {
+    margin-bottom: 36px;
+    color: #000;
+    font-family: Manrope;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.tab-content .left-panel {
+    margin-top: 48px;
+}
+
+.tab-content .left-panel ul {
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tab-content .left-panel ul li {
+    cursor: pointer;
+    height: 52px;
+    border-width: 1.2px;
+    padding: 16px 10px;
+    border-radius: 12px;
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.tab-content .left-panel ul .active {
+    background: #000000;
+    color: #fff;
+}
+
+.tab-content .left-panel ul .active:hover {
+    background: #000000;
+    color: #fff;
+    cursor: unset;
+}
+
+.tab-content .left-panel ul li:hover {
+    background-color: #e9e9e9;
+}
+
+.tab-content .right-panel {
+    padding: 16px 8px;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/right-panel-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* background: blue; */
+    justify-content: center;
+}
+
+.tab-content .tip {
+    position: absolute;
+    top: 26px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.tab-content .tip-content {
+    padding: 10px;
+    border-radius: 8px;
+    background: #00C82B0D;
+}
+
+.tab-content .tip-content p {
+    color: #00B126;
+    margin: 0px;
+}
+
+.tab-content .right-panel .panel-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+.tab-content .right-panel .panel-img img {
+    width: 100%;
+}
+
+.tab-content .caption {
+    margin: 12px 0px;
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000;
+}
+
 .benefits-content {
     display: flex;
     justify-content: center;
 }
 
 .product-benefits {
-    margin-bottom: 84px;
+    margin: 84px 0px;
 }
 
 .product-benefits .section-title {
