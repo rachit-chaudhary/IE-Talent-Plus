@@ -101,21 +101,21 @@
             </div>
             <div class="tab-switch">
                 <div class="toggle-container">
-                    <button class="toggle-btn tv-btn active">TALENT VIEW</button>
-                    <button class="toggle-btn cv-btn">COMPETITOR VIEW</button>
+                    <button id="talentView" class="toggle-btn tv-btn active">TALENT VIEW</button>
+                    <button id="competitorView" class="toggle-btn cv-btn">COMPETITOR VIEW</button>
                 </div>
             </div>
             <div class="tab-content">
                 <div class="col-md-4">
                     <div class="left-panel">
-                        <h4>Access comprehensive<br>
+                        <h4 id="leftPanelHeading">Access comprehensive<br>
                             talent insights simply
                         </h4>
-                        <ul>
-                            <li class="active">Talent Distribution by Location and Company</li>
-                            <li>Talent Distribution by Designation</li>
-                            <li>Salary Benchmarking across Experience Levels</li>
-                            <li>Notice Period Distribution</li>
+                        <ul id="leftPanelUL">
+                            <li class="list-options active" data-key="0">Talent Distribution by Location and Company</li>
+                            <li class="list-options" data-key="1">Talent Distribution by Designation</li>
+                            <li class="list-options" data-key="2">Salary Benchmarking across Experience Levels</li>
+                            <li class="list-options" data-key="3">Notice Period Distribution</li>
                         </ul>
                     </div>
                 </div>
@@ -124,11 +124,11 @@
                         <div class="tip">
                             <img src="assets/images/idea-icon.png" alt="idea-icon.png">
                             <div class="tip-content">
-                                <p>Identify the cities and organizations where the talent that you need is currently working</p>
+                                <p id="descriptionText">Identify the cities and organizations where the talent that you need is currently working</p>
                             </div>
                         </div>
                         <div class="panel-img">
-                            <img src="assets/images/talent-distribution-location.png" alt="talent-distribution-location.png">
+                            <img id="imageContainer" src="assets/images/talent-distribution-location.png" alt="talent-distribution-location.png">
                         </div>
                     </div>
                     <p class="caption">NOTE: Talent Pulse data/trends/insights are based on jobseekers’ CVs & actions on the Naukri platform. No company data/recruiter actions are considered.  </p>
