@@ -135,19 +135,19 @@ h5 {
 .carousel-title h3 {
     font-family: Manrope;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 26px;
     line-height: 40px;
     letter-spacing: 0%;
-    color: #3E3E3E;
+    color: #000;
 }
 
 .carousel-title h3 span {
     font-family: Manrope;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 26px;
     line-height: 40px;
     letter-spacing: 0%;
-    color: #3E3E3E;
+    color: #000;
 }
 
 .carousel-slider {
@@ -383,7 +383,7 @@ h5 {
 
 .tab-content .left-panel ul li {
     cursor: pointer;
-    height: 52px;
+    /* height: 52px; */
     border-width: 1.2px;
     padding: 16px 10px;
     border-radius: 12px;
@@ -1180,5 +1180,10 @@ footer .copyright {
         line-height: 20px;
         letter-spacing: 0px;
         vertical-align: middle;
+    }
+    .carousel-title h3,
+    .carousel-title h3 span {
+        font-size: 20px;
+        color: #3E3E3E;
     }
   }
