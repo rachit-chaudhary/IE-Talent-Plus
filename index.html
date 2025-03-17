@@ -43,14 +43,54 @@
 
     <div class="clients-carousel">
         <div class="container">
-                <div class="carousel-title">
+                <div class="carousel-title desktop">
                     <p>TRUSTED BY</p>
                     <h3>leading organizations<br>
                     <span>across industries</span></h3>
                 </div>
+                <div class="carousel-title mobile">
+                    <p>TRUSTED BY</p>
+                    <h3>leading organizations
+                    <span>across industries</span></h3>
+                </div>
         </div>
-        <div class="carousel-slider">
+        <div class="carousel-slider desktop">
             <img src="assets/images/carousel-slide.png" alt="carousel-slide.png">
+        </div>
+        <div class="logo-carousel mobile">
+            <div class="carousel-track">
+                <img src="assets/images/client-logos/Frame 1618872328.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872327.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872326.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872325.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872208.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872207.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872206.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872205.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872204.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872203.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872202.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872201.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872200.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872199.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872198.png" alt="">
+                <!-- duplicating for smooth flow -->
+                <img src="assets/images/client-logos/Frame 1618872328.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872327.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872326.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872325.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872208.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872207.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872206.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872205.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872204.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872203.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872202.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872201.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872200.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872199.png" alt="">
+                <img src="assets/images/client-logos/Frame 1618872198.png" alt="">
+            </div>
         </div>
     </div>
 
@@ -70,7 +110,7 @@
                     <h3>Naukri Talent Pulses <span> enables you to</span></h3>
                 </div>
                 <div class="feature-row">
-                    <div class="col-xs-12 feature-banner-image">
+                    <div class="col-xs-12 mobile feature-banner-image">
                         <img src="assets/images/feature-banner-image.png" alt="feature-banner-image.png">
                     </div>
                     <div class="col-md-4 col-xs-12 feature-card">
@@ -243,72 +283,72 @@
                     <h5>than other market solutions</h5>
                 </div>
                 <div class="toggle-wrapper">
-                    <button class="toggle-btn tv-benefits active">Talent solution</button>
-                    <button class="toggle-btn other-benefits">Other solution</button>
+                    <button class="toggle-btn tv-benefits active" onclick="showComparison('talent')">Talent Pulse</button>
+                    <button class="toggle-btn other-benefits" onclick="showComparison('other')">Other Solutions</button>
                 </div>
                 <div class="benefits-content">
-                    <div class="col-md-4 headings">
-                        <div class="table-content">
+                    <div class="comparison-table">
+                        <div class="table-row">
                             <p class="benefits-head">SOURCE OF DATA</p>
-                            <img src="assets/images/green-check.png" alt="green-check.png">
-                            <p class="benefits-copy">Millions of actions on Naukri’s job platform</p>
+                            <div class="comparison-cell talent">
+                                <img src="assets/images/green-check.png" alt="green-check">
+                                <p>Millions of actions on Naukri’s job platform</p>
+                            </div>
+                            <div class="comparison-cell other">
+                                <p>Independent studies and surveys with a limited group</p>
+                            </div>
                         </div>
-                        <div class="table-content">
+                        <div class="table-row">
                             <p class="benefits-head">AI CAPABILITIES</p>
-                            <img src="assets/images/green-check.png" alt="green-check.png">
-                            <p class="benefits-copy">Advanced ML algorithms deconstruct information
-                                to generate AI insight on your queries</p>
+                            <div class="comparison-cell talent">
+                                <img src="assets/images/green-check.png" alt="green-check">
+                                <p>Advanced ML algorithms deconstruct information to generate AI insight on your queries</p>
+                            </div>
+                            <div class="comparison-cell other">
+                                <p>Mostly a condensation of information without advanced analysis</p>
+                            </div>
                         </div>
-                        <div class="table-content">
+                        <div class="table-row">
                             <p class="benefits-head">EASE OF USE</p>
-                            <img src="assets/images/green-check.png" alt="green-check.png">
-                            <p class="benefits-copy">Self-serve tool that is easy to use
-                                at your convenience</p>
+                            <div class="comparison-cell talent">
+                                <img src="assets/images/green-check.png" alt="green-check">
+                                <p>Self-serve tool that is easy to use at your convenience</p>
+                            </div>
+                            <div class="comparison-cell other">
+                                <p>Reports are available on request, and there is a lag between request and delivery</p>
+                            </div>
                         </div>
-                        <div class="table-content">
+                        <div class="table-row">
                             <p class="benefits-head">RELEVANCE OF INFORMATION</p>
-                            <img src="assets/images/green-check.png" alt="green-check.png">
-                            <p class="benefits-copy">Real-time information</p>
+                            <div class="comparison-cell talent">
+                                <img src="assets/images/green-check.png" alt="green-check">
+                                <p>Real-time information</p>
+                            </div>
+                            <div class="comparison-cell other">
+                                <p>Previously collated data, not real-time</p>
+                            </div>
                         </div>
-                        <div class="table-content">
+                        <div class="table-row">
                             <p class="benefits-head">SCALE OF DATA ANALYSIS</p>
-                            <img src="assets/images/green-check.png" alt="green-check.png">
-                            <p class="benefits-copy">An analysis of candidate actions from
-                                10,000s of companies</p>
+                            <div class="comparison-cell talent">
+                                <img src="assets/images/green-check.png" alt="green-check">
+                                <p>An analysis of candidate actions from 10,000s of companies</p>
+                            </div>
+                            <div class="comparison-cell other">
+                                <p>Actions of employees from a few 100 companies analyzed</p>
+                            </div>
                         </div>
-                        <div class="table-content">
-                            <p class="benefits-head">LEVEL OF DETAILED INSIGHT AVAILABLE</p>.
-                            <img src="assets/images/green-check.png" alt="green-check.png">
-                            <p class="benefits-copy">Highly detailed insight with option to switch
-                                between views, use filters etc. easily</p>
+                        <div class="table-row">
+                            <p class="benefits-head">LEVEL OF DETAILED INSIGHT AVAILABLE</p>
+                            <div class="comparison-cell talent">
+                                <img src="assets/images/green-check.png" alt="green-check">
+                                <p>Highly detailed insight with option to switch between views, use filters etc. easily</p>
+                            </div>
+                            <div class="comparison-cell other">
+                                <p>Overarching insights that often don’t dive deeper to present the view you desire</p>
+                            </div>
                         </div>
                     </div>
-    
-                    <!-- <div class="col-md-4 talent-plus">
-                        <div class="table-content">
-                            <p>Millions of actions on Naukri’s job platform</p>
-                        </div>
-                        <div class="table-content">
-                            <p>Advanced ML algorithms deconstruct information
-                                to generate AI insight on your queries</p>
-                        </div>
-                        <div class="table-content">
-                            <p>Self-serve tool that is easy to use
-                                at your convenience</p>
-                        </div>
-                        <div class="table-content">
-                            <p>Real-time information</p>
-                        </div>
-                        <div class="table-content">
-                            <p>An analysis of candidate actions from
-                                10,000s of companies</p>
-                        </div>
-                        <div class="table-content">
-                            <p>Highly detailed insight with option to switch
-                                between views, use filters etc. easily</p>
-                        </div>
-                    </div> -->
-    
                 </div>
             </div>
         </div>
@@ -320,44 +360,46 @@
                 <h3>What our customers say</h3>
             </div>
             <div class="testimonials-content">
-                <div class="col-md-6 col-xs-12">
-                    <div class="left">
-                        <div class="rating">
-                            <img src="assets/images/stars.png" alt="stars.png">
-                        </div>
-                        <div class="client-details">
-                            <div class="client-name">
-                                <h5>PRASOON PRABHANJAN</h5>
-                                <h6>TA Head, Sopra Steria</h6>
+                <div class="carousel-native">
+                    <div class="testimonial col-md-6 col-xs-12">
+                        <div class="left">
+                            <div class="rating">
+                                <img src="assets/images/stars.png" alt="stars.png">
                             </div>
-                            <span class="divider"></span>
-                            <div class="client-logo"><img src="/assets/images/sopra-steria-logo.png" alt="sopra-steria-logo.png"></div>
-                        </div>    
-                        <div class="testimonials-body">
-                            <p>"Definitely very beneficial for organizations when it comes to Talent Planning.<span> It is truly a time saving product </span>that gives you information about candidates’ availability and competition’s talent overview in one place. Earlier, getting data with in-depth quality market analysis, salary benchmarking, estimating time to hire etc. used to be difficult and <span>consumed</span> a lot of time but <span>with talent pulse it happens in just a click.</span>"</p>
-                        </div>                    
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xs-12">
-                    <div class="right">
-                        <div class="rating">
-                            <img src="assets/images/stars.png" alt="stars.png">
+                            <div class="client-details">
+                                <div class="client-name">
+                                    <h5>PRASOON PRABHANJAN</h5>
+                                    <h6>TA Head, Sopra Steria</h6>
+                                </div>
+                                <span class="divider"></span>
+                                <div class="client-logo"><img src="/assets/images/sopra-steria-logo.png" alt="sopra-steria-logo.png"></div>
+                            </div>    
+                            <div class="testimonials-body">
+                                <p>"Definitely very beneficial for organizations when it comes to Talent Planning.<span> It is truly a time saving product </span>that gives you information about candidates’ availability and competition’s talent overview in one place. Earlier, getting data with in-depth quality market analysis, salary benchmarking, estimating time to hire etc. used to be difficult and <span>consumed</span> a lot of time but <span>with talent pulse it happens in just a click.</span>"</p>
+                            </div>                    
                         </div>
-                        <div class="client-details">
-                            <div class="client-name">
-                                <h5>MURALI MANOJ</h5>
-                                <h6>L5 Recruiter, Amazon</h6>
-                            </div>
-                            <span class="divider"></span>
-                            <div class="client-logo"><img src="/assets/images/amazon-logo.png" alt="amazon-logo.png"></div>
-                        </div>    
-                        <div class="testimonials-body">
-                            <p>"<span>This tool is a game changer</span>, it helps us understand the industry deeply. We are very happy with the kind of data analysis that happens with the click of a button. <span>The diversity data, and geographical segmentations are very helpful for us in our hiring activities.</span>"</p>
-                        </div>                    
                     </div>
+    
+                    <div class="testimonial col-md-6 col-xs-12">
+                        <div class="right">
+                            <div class="rating">
+                                <img src="assets/images/stars.png" alt="stars.png">
+                            </div>
+                            <div class="client-details">
+                                <div class="client-name">
+                                    <h5>MURALI MANOJ</h5>
+                                    <h6>L5 Recruiter, Amazon</h6>
+                                </div>
+                                <span class="divider"></span>
+                                <div class="client-logo"><img src="/assets/images/amazon-logo.png" alt="amazon-logo.png"></div>
+                            </div>    
+                            <div class="testimonials-body">
+                                <p>"<span>This tool is a game changer</span>, it helps us understand the industry deeply. We are very happy with the kind of data analysis that happens with the click of a button. <span>The diversity data, and geographical segmentations are very helpful for us in our hiring activities.</span>"</p>
+                            </div>                    
+                        </div>
+                    </div>
+    
                 </div>
-
             </div>
         </div>
     </div>
@@ -387,7 +429,7 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="row">
+            <div class="row desktop">
                 <div class="col-md-3">
                     <h6>Recruiter services</h6>
                     <ul>
@@ -429,7 +471,7 @@
             <div class="row">
                 <div class="col-md-12"><h6 class="sales-enquires-header">Sales enquires</h6></div>
             </div>
-            <div class="row">
+            <div class="row add-gap">
                 <div class="col-md-3">
                     <ul>
                         <li class="li-head">India:</li>
@@ -460,16 +502,21 @@
                         <li><a href="mailto:africa@naukri.com">africa@naukri.com</a></li>
                     </ul>
                 </div>
+                <div class="container mobile">
+                    <a class="footer-anchor" href="#">
+                        <button class="footer-btn">Contact Us</button>
+                    </a>
+                </div>
             </div>
             <hr>
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-2 desktop">
                     <img src="assets/images/footer-site-logo.png" alt="footer-site-logo.png">
                 </div>
                 <div class="col-md-8">
                     <p class="copyright">© 2024 Info Edge India Limited | All Rights Reserved</p>
                 </div>
-                <div class="col-md-2 social-links-div">
+                <div class="col-md-2 social-links-div desktop">
                     <div class="social-links">
                         <a href="#"><img src="assets/images/footer-linkedin.png" alt="footer-linkedin.png"></a>
                         <a href="#"><img src="assets/images/footer-youtube.png" alt="footer-youtube.png"></a>
@@ -492,6 +539,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="assets/script.js"></script>
+    <script src="assets/testimonial-carousel.js"></script>
+    <script src="assets/features.js"></script>
 </body>
 
 </html>
