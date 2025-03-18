@@ -1,8 +1,13 @@
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    let isMobile = true
+}
+
 const talentView = document.getElementById('talentView')
 const competitorView = document.getElementById('competitorView')
 
 const leftPanelHeading = document.getElementById('leftPanelHeading')
 const leftPanelUL = document.getElementById('leftPanelUL')
+const mobileSelect = document.getElementById('list-options-dd'); 
 
 const imageContainer = document.querySelector('#imageContainer')
 const descriptionText = document.getElementById('descriptionText')

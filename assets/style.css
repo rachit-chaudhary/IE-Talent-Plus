@@ -163,6 +163,41 @@ h5 {
     width: 100%;
 }
 
+.carousel-slider img {
+    margin-top: 16px;
+    height: 100%;
+    width: auto;
+}
+.logo-carousel {
+    width: 60%;
+    overflow: hidden;
+    background: white;
+    padding: 20px 0;
+    white-space: nowrap;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    height: max-content;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 40px;
+    animation: scroll 15s linear infinite;
+}
+
+.carousel-track img {
+    width: 120px;
+    height: auto;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
 .product-features {
     margin: 48px 0px;
 }
@@ -477,7 +512,7 @@ h5 {
 }
 
 .product-benefits {
-    margin: 112px 0px;
+    margin: 64px 0px;
 }
 
 .product-benefits .section-title {
@@ -1114,7 +1149,7 @@ footer .copyright {
     }
     .testimonial { 
         min-width: 100%;
-        padding: 30px 24px;
+        padding: 0px 24px;
         border-radius: 24px;
     }
     .client-name h5 {
@@ -1185,5 +1220,72 @@ footer .copyright {
     .carousel-title h3 span {
         font-size: 20px;
         color: #3E3E3E;
+    }
+
+    .tab-content {
+        flex-direction: column;
+        height: auto;
+    }
+    .tab-content h4 {
+        font-family: Manrope;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+        color: rgba(38, 93, 245, 1);
+    }
+    .tab-content .left-panel {
+        margin: 0px;
+    }
+    .tab-content .tip {
+        justify-content: center; 
+    }
+    .tab-content .tip-content p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .tab-content .right-panel .panel-img img {
+        width: 100%;
+        height: auto;
+    }
+    .product-testimonials {
+        margin-top: 48px;
+    }
+  }
+
+  @media only screen and (min-width: 820px) and (max-width: 1024px) {
+    .main-header {
+        background-size: contain;
+        height: max-content;
+        background-position: right;
+        padding: 48px 0px;
+    }
+    .feature-row {
+        bottom: -80%;
+    }
+    .product-insights {
+        margin-top: 345px;
+    }
+    .tab-content .right-panel .panel-img img {
+        height: auto;
+        width: 100%;
+    }
+    .product-benefits {
+        margin: 155px 0px;
+    }
+    .product-benefits .section-title h3 {
+        text-align: center;
+    }
+    .client-logo img {
+        width: 100%;
+    }
+    .banner-head h5,
+    .banner-head h5 span {
+        font-size: 16px;
+    }
+    .banner-head {
+        width: 30%;
     }
   }
